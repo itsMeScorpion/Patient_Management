@@ -1,0 +1,78 @@
+/*!
+ * animate.css -https://animate.style/
+ * Version - 4.1.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright 2020 Daniel Eden
+ */
+ @charset "UTF-8";
+
+ /*!
+  * animate.css -https://animate.style/
+  * Version - 4.1.1
+  * Licensed under the MIT license - http://opensource.org/licenses/MIT
+  * Copyright 2020 Daniel Eden
+  */
+ 
+ .animated {
+   animation-duration: 1s;
+   animation-fill-mode: both;
+ }
+ 
+ @keyframes bounce {
+   0%,
+   20%,
+   50%,
+   80%,
+   100% {
+     transform: translateY(0);
+   }
+   40% {
+     transform: translateY(-30px);
+   }
+   60% {
+     transform: translateY(-15px);
+   }
+ }
+ 
+ .bounce {
+   animation-name: bounce;
+ }
+ 
+ @keyframes bounceIn {
+   0%,
+   20%,
+   40%,
+   60%,
+   80%,
+   100% {
+     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+   }
+   0% {
+     opacity: 0;
+     transform: scale3d(0.3, 0.3, 0.3);
+   }
+   20% {
+     transform: scale3d(1.1, 1.1, 1.1);
+   }
+   40% {
+     transform: scale3d(0.9, 0.9, 0.9);
+   }
+   60% {
+     opacity: 1;
+     transform: scale3d(1.03, 1.03, 1.03);
+   }
+   80% {
+     transform: scale3d(0.97, 0.97, 0.97);
+   }
+   100% {
+     opacity: 1;
+     transform: scale3d(1, 1, 1);
+   }
+ }
+ 
+ .bounceIn {
+   animation-name: bounceIn;
+ }
+ 
+ /* Add more animations and styles as needed */
+ 
